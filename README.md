@@ -1,14 +1,7 @@
 # Big Data Cryptocurrency Project
   The dataset used for this project is a CSV file of cryptocurrency data obtained from [ Kaggle G-Research Crypto Forecasting](https://www.kaggle.com/competitions/g-research-crypto-forecasting/data).This project's primary objective is to build a pipeline that will process the dataset utilizing streaming and batch processing layers to simulate a daily cryoptocurrency trading.
 
- 
-
-## Data Pipeline
-
-The following image shows our pipeline's architecture:
-
-![Data Pipeline](./BigDataArchitecture.png)
-
+  
  
 
 
