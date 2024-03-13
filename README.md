@@ -1,16 +1,7 @@
 # Big Data Cryptocurrency Project
+  The dataset used for this project is a CSV file of cryptocurrency data obtained from [ Kaggle G-Research Crypto Forecasting](https://www.kaggle.com/competitions/g-research-crypto-forecasting/data).This project's primary objective is to build a pipeline that will process the dataset utilizing streaming and batch processing layers to simulate a daily cryoptocurrency trading.
 
-This project showcases a big data processing pipeline for cryptocurrency data using Hadoop, Spark Streaming, Kafka, MongoDB, and a React dashboard. The dataset used for this project is a CSV file of cryptocurrency data obtained from [ Kaggle G-Research Crypto Forecasting](https://www.kaggle.com/competitions/g-research-crypto-forecasting/data). The main goal of this project is to create a pipeline to process the dataset using a batch processing layer and a streaming processing layer, simulation the daily cryoptocurrency trade.
-
-## Table of Contents
-
-- [Data Pipeline](#data-pipeline)
-- [Dataset](#dataset)
-- [Batch Processing Layer](#batch-processing-layer)
-- [Streaming Layer](#streaming-layer)
-- [Data Storage and Visualization](#data-storage-and-visualization)
-- [Demo](#demo)
-
+ 
 
 ## Data Pipeline
 
@@ -18,20 +9,7 @@ The following image shows our pipeline's architecture:
 
 ![Data Pipeline](./BigDataArchitecture.png)
 
-## Dataset
-
-The dataset contains the following fields:
-
-- `timestamp`: A timestamp for the minute covered by the row.
-- `Asset_ID`: An ID code for the cryptoasset.
-- `Count`: The number of trades that took place this minute.
-- `Open`: The USD price at the beginning of the minute.
-- `High`: The highest USD price during the minute.
-- `Low`: The lowest USD price during the minute.
-- `Close`: The USD price at the end of the minute.
-- `Volume`: The number of cryptoasset units traded during the minute.
-- `VWAP`: The volume weighted average price for the minute.
-- `Target`: 15-minute residualized returns.
+ 
 
 
 ## Technologies Overview
