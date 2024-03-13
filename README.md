@@ -38,27 +38,14 @@ The dataset contains the following fields:
 
 This section provides a brief overview of the technologies used in this project and their role in big data processing.
 
-- **HDFS (Hadoop Distributed FileSystem)**: HDFS is a distributed file system designed to store and manage large volumes of data across multiple nodes. It provides high-throughput access to data and is fault-tolerant, making it suitable for big data projects.
-
-- **Hadoop**: Hadoop is an open-source framework that enables distributed storage and processing of large datasets using the MapReduce programming model. It provides a scalable, cost-effective solution for processing big data.
-
-- **Spark Streaming**: Apache Spark Streaming is a robust, scalable, and fault-tolerant streaming processing system that inherently supports both batch and real-time workloads. As an extension of the core Spark API, Spark Streaming enables data engineers and data scientists to process live data from a variety of sources, such as Kafka, Flume, and Amazon Kinesis...
-
-- **Kafka**: Apache Kafka is a distributed streaming platform that is designed to handle high-throughput, fault-tolerant, and scalable real-time data streaming. It enables the publishing and subscribing to streams of records and allows the processing of these streams as they occur. In this project, Kafka is used as a message broker to ingest and distribute the streaming data to be later processed by Spark Streaming.
-
-- **MongoDB**: MongoDB is a NoSQL database that stores data in flexible, JSON-like documents, which allows for a more dynamic and scalable data model compared to traditional relational databases. It is designed to handle high-throughput, horizontal scaling, and high availability, making it well-suited for big data projects. In this project, MongoDB is used as the primary data store for the output of both batch processing and streaming data, providing a unified storage solution that simplifies data management and retrieval.
-
-## Batch Processing Layer
-
-In the batch processing layer, Hadoop MapReduce is used to process the daily batch of cryptocurrency trade data stored in HDFS for each cryptoasset ID.
-
-## Streaming Layer
-
-In the streaming layer, Apache Spark Streaming is used to process the streaming data. Spark Streaming consumes the data from the Kafka topic, simulating real world streamed data, and visualizes the variation of the volume weighted average price, the min, the max, and the count for every timestamp (minute).
-
-## Data Storage and Visualization
-
-The data is then stored in a MongoDB database and sent through a Node server to be visualized on a React dashboard.
+ - **HDFS (Hadoop Conveyed FileSystem)**: HDFS is a dispersed record framework intended to store and oversee enormous volumes of information across different hubs. It gives high-throughput admittance to information and is shortcoming lenient, making it appropriate for enormous information projects. 
+- **Hadoop**: Hadoop is an open-source system that empowers disseminated capacity and handling of enormous datasets utilizing the MapReduce programming model. It gives a versatile, savvy answer for handling large information.
+ - **Flash Streaming**: Apache Flash Streaming is a hearty, versatile, and shortcoming open minded streaming handling framework that innately upholds both bunch and ongoing responsibilities. As an expansion of the center Flash Programming interface, Flash Streaming empowers information specialists and information researchers to handle live information from various sources, like Kafka, Flume, and Amazon Kinesis...
+ - **Kafka**: Apache Kafka is a disseminated streaming stage that is intended to deal with high-throughput, shortcoming lenient, and versatile constant information streaming. It empowers the distributing and buying into surges of records and permits the handling of these streams as they happen. In this venture, Kafka is utilized as a message dealer to ingest and disseminate the streaming information to be subsequently handled by Flash Streaming.
+   - **MongoDB**: MongoDB is a NoSQL data set that stores information in adaptable, JSON-like reports, which considers an additional dynamic and versatile information model contrasted with conventional social data sets. It is intended to deal with high-throughput, even scaling, and high accessibility, making it appropriate for large information projects. In this task, MongoDB is utilized as the essential information store for the result of both bunch handling and streaming information, giving a bound together stockpiling arrangement that works on information the board and recovery. 
+## Cluster Handling Layer In the group handling layer, Hadoop MapReduce is utilized to deal with the day to day cluster of digital currency exchange information put away in HDFS for each cryptoasset ID. 
+## Streaming Layer In the streaming layer, Apache Flash Streaming is utilized to deal with the streaming information. Flash Streaming consumes the information from the Kafka subject, mimicking true streamed information, and envisions the variety of the volume weighted normal value, the min, the maximum, and the count for each timestamp (minute). 
+## Information Capacity and Representation The information is then put away in a MongoDB data set and sent through a Hub server to be imagined on a Respond dashboard.
 
 ## Demo
 [demo.webm](https://github.com/SamerBenMim/BigData-Pipeline-Hadoop-Kafka-Spark/assets/79151541/5fb26869-e5dd-4378-9705-b82489e1e458)
